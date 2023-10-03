@@ -1,0 +1,54 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    /* Primary */
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+
+    /* Neutral */
+    --grayish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+}
+body{
+    margin: 0 8rem;
+}
+
+/* ! navbar */
+nav.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-menu{
+    display: flex;
+    gap: 1.5rem;
+}
+.navbar-menu>a{
+    text-decoration: none;
+    padding: 0.6rem 1.8rem;
+    border-radius: 8px;
+}
+.navbar-link:hover{
+    color: var(--soft-red);
+}
+.login-link{
+    background-color: var(--soft-red);
+    color: white;
+    border: 1px solid var(--soft-red);
+}
+.login-link:hover{
+    background-color: white;
+    color: var(--soft-red);
+}
+
