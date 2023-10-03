@@ -82,7 +82,7 @@ nav.navbar{
 #hero .button-box{
     margin-top: 2rem;
 }
-.button-box .hero-button{
+#hero .button-box .hero-button{
     margin-right: 1rem;
     font-size: 18px;
     padding:1rem 1.4rem;
@@ -93,20 +93,20 @@ nav.navbar{
     border: 3px solid transparent;
     cursor: pointer;
 }
-.button-box .hero-button:nth-child(1){
+#hero .button-box .hero-button:nth-child(1){
     background-color: var(--soft-blue);
     color: white;
 }
-.button-box .hero-button:nth-child(1):hover{
+#hero .button-box .hero-button:nth-child(1):hover{
     background-color: white;
     color: var(--soft-blue);
     border: 3px solid var(--soft-blue);
 }
-.button-box .hero-button:nth-child(2){
+#hero .button-box .hero-button:nth-child(2){
     background-color: #f7f7f7;
     color: var(--soft-blue);
 }
-.button-box .hero-button:nth-child(2):hover{
+#hero .button-box .hero-button:nth-child(2):hover{
     background-color: white;
     color: var(--very-dark-blue);
     border: 3px solid var(--grayish-blue);
@@ -116,11 +116,11 @@ nav.navbar{
     position: relative;
     height: fit-content;
 }
-.img-box img.hero-img{
+#hero .img-box img.hero-img{
     width: 100%;
     height: auto;
 }
-.img-box::before{
+#hero .img-box::before{
     content: " ";
     height: 20rem;
     width: 800px;
