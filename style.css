@@ -21,6 +21,8 @@ html{
 }
 body{
     margin: 0 8rem;
+    /* width: 100%; */
+    overflow-x: clip;
 }
 
 /* ! navbar */
@@ -32,7 +34,7 @@ nav.navbar{
 }
 .navbar-menu{
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .navbar-menu>a{
     text-decoration: none;
@@ -58,9 +60,10 @@ nav.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
 }
 #hero .text-box{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -75,9 +78,6 @@ nav.navbar{
     font-size: 24px;
     line-height: 35px;
     color: var(--grayish-blue);
-}
-#hero .img-box{
-    width: 40%;
 }
 #hero .button-box{
     margin-top: 2rem;
@@ -110,4 +110,26 @@ nav.navbar{
     background-color: white;
     color: var(--very-dark-blue);
     border: 3px solid var(--grayish-blue);
+}
+#hero .img-box{
+    width: 45%;
+    position: relative;
+    height: fit-content;
+}
+.img-box img.hero-img{
+    width: 100%;
+    height: auto;
+}
+.img-box::before{
+    content: " ";
+    height: 20rem;
+    width: 800px;
+    border-radius: 175px 0 0 175px;
+    background-color: var(--soft-blue);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 150px;
+    margin-left: 200px;
+    z-index: -1;
 }
