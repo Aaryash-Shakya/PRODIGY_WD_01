@@ -155,3 +155,31 @@ nav.navbar{
     color: var(--grayish-blue);
     text-align: center;
 }
+#feature .feature-menu{
+    max-width: 800px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--grayish-blue);
+}
+#feature .feature-item{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: auto;
+    padding-right: auto;
+    gap:0;
+    text-align: center;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: 18px;
+    cursor: pointer;
+}
+#feature .feature-item:hover{
+    color: var(--soft-red);
+}
+
+#feature .active{
+    border-bottom: 4px solid var(--soft-red);
+}
