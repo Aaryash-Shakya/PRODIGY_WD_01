@@ -211,3 +211,75 @@ nav.navbar {
 #feature .active {
     border-bottom: 4px solid var(--soft-red);
 }
+
+/* ! download section */
+#download .download-container {
+    width: 100%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#download .download-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 8px 10px 1px rgba(83, 104, 223, 0.2);
+}
+
+#download .download-card:nth-child(1) {
+    translate: 0 -50px;
+}
+
+#download .download-card:nth-child(3) {
+    translate: 0 50px;
+}
+
+#download .download-card img.logo {
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+#download .download-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--very-dark-blue);
+}
+
+#download .download-card p {
+    color: var(--grayish-blue);
+}
+
+#download .download-card img.dots {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#download button {
+    margin: 1rem auto;
+    width: 80%;
+    font-size: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border: 3px solid transparent;
+    cursor: pointer;
+    background-color: var(--soft-blue);
+    color: white;
+}
+
+#download button:hover {
+    background-color: white;
+    color: var(--soft-blue);
+    border: 3px solid var(--soft-blue);
+}
