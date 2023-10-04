@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-margin-top: 100px;
 }
 
 html {
@@ -56,6 +57,10 @@ nav.navbar {
     border-radius: 8px;
 }
 
+.navbar-link {
+    color: var(--grayish-blue);
+}
+
 .navbar-link:hover {
     color: var(--soft-red);
 }
@@ -73,7 +78,7 @@ nav.navbar {
 
 /* ! hero section */
 #hero {
-    margin-top: 5rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,6 +225,10 @@ nav.navbar {
 }
 
 /* ! download section */
+#download {
+    margin-top: 100px;
+}
+
 #download .download-container {
     width: 100%;
     margin: 10rem auto;
