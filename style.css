@@ -54,7 +54,6 @@ nav.navbar {
 .navbar-menu>a {
     text-decoration: none;
     padding: 0.6rem 1rem;
-    border-radius: 8px;
 }
 
 .navbar-menu>a:last-of-type {
@@ -69,6 +68,10 @@ nav.navbar {
 
 .navbar-link:hover {
     color: var(--soft-red);
+}
+
+.navbar-link.active{
+    border-bottom: 3px solid var(--soft-red);
 }
 
 .login-link {

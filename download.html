@@ -18,10 +18,11 @@
             </a>
         </div>
         <div class="navbar-menu">
-            <a href="index.html#feature" class="navbar-link">FEATURES</a>
-            <a href="download.html" class="navbar-link">DOWNLOAD</a>
-            <a href="#contact" class="navbar-link">CONTACT</a>
-            <a href="#" class="login-link">LOGIN</a>
+            <a href="index.html#feature" class="navbar-link" id="navFeatures">FEATURES</a>
+            <a href="download.html" class="navbar-link active" id="navDownload">DOWNLOAD</a>
+            <a href="#contact" class="navbar-link" id="navContact">CONTACT</a>
+            <a href="" class="login-link">LOGIN</a>
+        </div>
     </nav>
     <section id="download">
         <div class="text-box">
@@ -72,6 +73,19 @@
     </footer>
     <!-- external js -->
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            var top = window.scrollY;
+            var offset = navDownload.offsetTop;
+            var height = navDownload.offsetHeight;
+            if (top >= offset && top < offset + height) {
+                setActiveLink('navDownload')
+            }
+            else if (isEndOfPage()) {
+                setActiveLink('navContact')
+            }
+        })
+    </script>
 </body>
 
 </html>
