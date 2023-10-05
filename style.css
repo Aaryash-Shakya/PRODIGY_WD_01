@@ -231,6 +231,48 @@ nav.navbar {
     border-bottom: 4px solid var(--soft-red);
 }
 
+#feature .feature-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+#feature .feature-img{
+    width: 50%;
+}
+#feature .feature-container img{
+    width: 100%;
+}
+#feature .text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 35%;
+}
+#feature .description{
+    text-align: left;
+}
+#feature .more-info-btn{
+    margin-top: 1rem;
+    font-size: 18px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.4);
+    border: 3px solid transparent;
+    cursor: pointer;
+    background-color: var(--soft-blue);
+    color: white;
+}
+#feature .more-info-btn:hover{
+    background-color: white;
+    color: var(--soft-blue);
+    border: 3px solid var(--soft-blue);
+}
+
 /* ! download section */
 #download {
     margin-top: 100px;
