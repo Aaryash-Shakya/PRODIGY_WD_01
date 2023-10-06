@@ -25,10 +25,9 @@ html {
     --very-dark-blue: hsl(229, 31%, 21%);
 }
 
-body {
-    margin: 0 8rem;
-    /* width: 100%; */
-    overflow-x: clip;
+.wrapper{
+    padding: 0 8rem;
+    overflow-x: hidden;
 }
 
 /* ! navbar */
@@ -40,7 +39,7 @@ nav.navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 0 8rem;
     z-index: 10;
     background-color: rgba(255, 255, 255, 1);
@@ -91,6 +90,7 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     padding: 2rem 0;
 }
 
@@ -161,19 +161,20 @@ nav.navbar {
 #hero .img-box img.hero-img {
     width: 100%;
     height: auto;
+    overflow: clip;
 }
 
 #hero .img-box::before {
     content: " ";
     height: 20rem;
-    width: 800px;
+    width: 60vw;
     border-radius: 175px 0 0 175px;
     background-color: var(--soft-blue);
     position: absolute;
     top: 0px;
     left: 0px;
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 10vw;
     z-index: -1;
 }
 
@@ -354,8 +355,7 @@ nav.navbar {
 
 /* ! contact */
 footer {
-    margin-left: -8rem;
-    width: 100vw;
+    width: 100%;
 }
 
 #contact {
@@ -401,4 +401,14 @@ footer {
 #contact .contact-btn:hover {
     background-color: white;
     color: var(--soft-red);
+}
+
+/* responsive */
+@media screen and (max-width: 1200px){
+    nav.navbar{
+        padding: 0 2rem;
+    }
+    .wrapper{    
+        padding: 0 2rem;
+    }
 }
