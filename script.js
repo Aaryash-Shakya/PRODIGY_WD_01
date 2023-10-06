@@ -29,7 +29,7 @@ function isEndOfPage() {
     const scrollTop = document.documentElement.scrollTop;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-    return scrollTop + windowHeight >= documentHeight;
+    return scrollTop + windowHeight + 5 >= documentHeight;
 }
 
 navFeatures.addEventListener('click', () => {
