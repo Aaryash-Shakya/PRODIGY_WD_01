@@ -45,16 +45,14 @@ navContact.addEventListener('click', () => {
 // ! responsive navbar
 const navbarToggle = document.getElementById('navbarToggle')
 const navbarMenu = document.getElementById('navbarMenu')
-console.log(navbarMenu.style)
-console.log(navbarToggle)
-navbarToggle.addEventListener('click',()=>{
+navbarToggle.addEventListener('click', () => {
     console.log(`${navbarMenu.style.display}`);
-    if(navbarMenu.style.display=='flex'){
-        navbarMenu.style.display='none'
-        navbarToggle.setAttribute('src','images/icon-hamburger.svg')
+    if (navbarMenu.style.display == 'flex') {
+        navbarMenu.style.display = 'none'
+        navbarToggle.setAttribute('src', 'images/icon-hamburger.svg')
     }
-    else{
-        navbarMenu.style.display='flex'
-        navbarToggle.setAttribute('src','images/icon-close.svg')
+    else {
+        navbarMenu.style.display = 'flex'
+        navbarToggle.setAttribute('src', 'images/icon-close.svg')
     }
 })

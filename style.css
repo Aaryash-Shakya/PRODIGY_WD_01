@@ -25,7 +25,7 @@ html {
     --very-dark-blue: hsl(229, 31%, 21%);
 }
 
-.wrapper{
+.wrapper {
     padding: 0 8rem;
     overflow-x: hidden;
 }
@@ -45,7 +45,7 @@ nav.navbar {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.navbar-logo{
+.navbar-logo {
     display: flex;
     width: 100%;
     padding: 0 1rem;
@@ -59,7 +59,7 @@ nav.navbar {
     gap: 0.5rem;
 }
 
-#navbarToggle{
+#navbarToggle {
     scale: 1.3;
     display: none;
 }
@@ -83,7 +83,7 @@ nav.navbar {
     color: var(--soft-red);
 }
 
-.navbar-link.active{
+.navbar-link.active {
     border-bottom: 3px solid var(--soft-red);
 }
 
@@ -195,7 +195,8 @@ nav.navbar {
 
 /* common for feature, download */
 /* NOTE: strictly specify the section coz it shouldn't apply to hero section */
-#feature .text-box, #download .text-box {
+#feature .text-box,
+#download .text-box {
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -252,19 +253,22 @@ nav.navbar {
     border-bottom: 4px solid var(--soft-red);
 }
 
-#feature .feature-container{
+#feature .feature-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
 }
-#feature .feature-img{
+
+#feature .feature-img {
     width: 50%;
 }
-#feature .feature-container img{
+
+#feature .feature-container img {
     width: 100%;
 }
-#feature .text-area{
+
+#feature .text-area {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -272,10 +276,8 @@ nav.navbar {
     gap: 1rem;
     width: 35%;
 }
-#feature .description{
-    text-align: left;
-}
-#feature .more-info-btn{
+
+#feature .more-info-btn {
     margin-top: 1rem;
     font-size: 18px;
     padding: 0.6rem 1.2rem;
@@ -288,7 +290,8 @@ nav.navbar {
     background-color: var(--soft-blue);
     color: white;
 }
-#feature .more-info-btn:hover{
+
+#feature .more-info-btn:hover {
     background-color: white;
     color: var(--soft-blue);
     border: 3px solid var(--soft-blue);
@@ -397,6 +400,14 @@ footer {
     font-weight: 500;
 }
 
+#contact form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 #contact input[name="email"],
 #contact .contact-btn {
     font-size: 18px;
@@ -404,7 +415,6 @@ footer {
     border: none;
     border-radius: 10px;
     height: 50px;
-    margin-right: 1rem;
 }
 
 #contact .contact-btn {
@@ -421,62 +431,75 @@ footer {
 }
 
 /* responsive */
-@media screen and (max-width: 1200px){
-    nav.navbar{
+@media screen and (max-width: 1200px) {
+    nav.navbar {
         padding: 0 2rem;
     }
-    .wrapper{    
+
+    .wrapper {
         padding: 0 2rem;
     }
 }
-@media screen and (max-width: 700px){
-    nav.navbar{
+
+@media screen and (max-width: 700px) {
+    nav.navbar {
         padding: 1.5rem 2rem;
         height: fit-content;
         flex-direction: column;
         gap: 2rem;
     }
-    .navbar-logo{
+
+    .navbar-logo {
         align-self: start;
     }
-    #navbarToggle{
+
+    #navbarToggle {
         display: inline;
     }
-    .navbar-menu{
+
+    .navbar-menu {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         display: none;
     }
-    .navbar-menu>a{
+
+    .navbar-menu>a {
         color: var(--grayish-blue);
         background-color: transparent;
-        margin: 0!important;
+        margin: 0 !important;
         border: none;
-        border-radius: 0!important;
+        border-radius: 0 !important;
         font-size: 20px;
     }
 
-    .wrapper{    
+    .wrapper {
         padding: 0 1rem;
     }
-    #hero{
+
+    #hero {
         flex-direction: column-reverse;
     }
-    #hero .text-box, #hero .img-box{
+
+    #hero .text-box,
+    #hero .img-box {
         width: 100%;
     }
-    #hero .img-box::before{
+
+    #hero .img-box::before {
         width: 100%;
         height: 200px;
         margin-top: 80px;
     }
-    #feature .feature-container{
+
+    #feature .feature-container {
         flex-direction: column;
         padding: 1rem;
         gap: 2rem;
     }
-    #feature .feature-img, #feature .text-area{
+
+    #feature .feature-img,
+    #feature .text-area {
         width: 100%;
     }
 }
