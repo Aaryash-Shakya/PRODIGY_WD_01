@@ -1,9 +1,13 @@
-# PRODIGY_WD_01
+# PRODIGY_WD_02
+TASK-01 of Web Development Internship by Prodigy InfoTech
 
-The first task of Web Development Internship by Prodigy InfoTech
+** TASK-02: Responsive Landing Page **
 
-The project is a Responsive Landing Page of a Bookmark Manager.
+** 🛠️ Tools: HTML, CSS, JavaScript **
 
 The design for the landing page is being used from [Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
 
-The Landing Page is build using HTML, CSS and JS.
+Features
+>✅ A responsive landing page
+>✅ An interactive navigation menu that changes style on hover and on scrolling over corresponding sections
+>✅ A fixed top navigation menu visible on all pages
