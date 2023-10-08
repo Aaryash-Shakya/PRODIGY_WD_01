@@ -1,7 +1,7 @@
 # PRODIGY_WD_01
 TASK-01 of Web Development Internship by Prodigy InfoTech
 
-**TASK-02:** Responsive Landing Page
+**TASK-01:** Responsive Landing Page
 
 **🛠️ Tools:** HTML, CSS, JavaScript</br>
 **🔗 LinkedIn:** [Aaryash Shakya](https://www.linkedin.com/posts/aaryash-shakya-367b0026a_webdevelopment-internship-frontenddevelopment-activity-7116392615171756032-MQzp?utm_source=share&utm_medium=member_desktop)
